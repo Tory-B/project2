@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f5f9;
+  color: #333333;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  width: 90%;
+  max-width: 1050px;
+  margin: 40px auto;
+}
+
+.page-header {
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+.page-header p {
+  margin: 0;
+  color: #666666;
+}
+
+.summary-section,
+.detail-section {
+  margin-bottom: 60px;
+}
+
+.summary-section h2,
+.detail-section h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.card-grid {
+  padding: 24px;
+  background-color: #f9fafc;
+  border: 1px solid #dddddd;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
+
+.summary-card {
+  overflow: hidden;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.my-card {
+  border: 3px solid #4f6cff;
+  box-shadow: 0 12px 28px rgba(79, 108, 255, 0.28);
+}
+
+.image-box {
+  position: relative;
+  width: 100%;
+}
+
+.image-box img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  padding: 6px 10px;
+  background-color: white;
+  color: #333333;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+.summary-content {
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.summary-content h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.summary-content p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.part {
+  color: #4f6cff;
+  font-weight: bold;
+}
+
+.detail-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.detail-section h2 {
+  margin-bottom: 0;
+}
+
+.detail-card {
+  padding: 30px;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.detail-card h3 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.detail-card > .part {
+  margin: 8px 0 4px;
+}
+
+.club {
+  margin: 0 0 24px;
+  color: #666666;
+  font-size: 14px;
+}
+
+.info-group {
+  margin-top: 22px;
+}
+
+.info-group h4 {
+  margin: 0 0 10px;
+  font-size: 17px;
+}
+
+.info-group p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+ul {
+  margin: 0;
+  padding-left: 24px;
+  line-height: 1.7;
+}
+
+a {
+  color: #3366ff;
+}
+
+/* 태블릿 / 중간 화면: 2열 */
+@media screen and (min-width: 700px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 데스크톱 화면: 3열 */
+@media screen and (min-width: 1000px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
